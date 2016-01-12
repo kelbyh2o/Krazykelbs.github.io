@@ -1,0 +1,223 @@
+<html>
+<head>
+
+    <!-- <title> means what will be displayed as the webpag's name. Look at the tab of the webpage. -->
+    <title> Practice Coding </title>
+
+    <!-- <base> means that what ever you put inside base will become the default for everything else within the code. For example if I used the tag bellow:
+    <base target="_blank" href="http://www.youtube.com">
+then all of the links in the body would place the above url before the other urls. So if later on I just had:
+    <a href="Vsauce"> This will take you to Vsauce </a>
+This link would take you to Vsauces youtube page. -->
+
+    <!-- by using type="text/css" you are telling the browser what you are using within the tags -->
+    <style type="text/css"  >
+        /* You state what part you want a certain style to pertain to, in the first case h1, and then use brackets to house the style choices for that section */
+        h1
+        {
+            font-size:72px;
+            color:darkmagenta;
+            background-color:azure;
+        }
+
+        body
+        {
+
+            font-size: 20px;
+            color:darkmagenta;
+            background-image: url(images/Kelby/Sidewave.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right top;
+            margin-right: 400px;
+            background-attachment: fixed;
+            background-color: azure;
+        }
+
+        table
+        {
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        th, td
+        {
+        text-align: left;
+        padding: 8px;
+        }
+
+        tr:nth-child(even)
+        {
+        background-color: #f2f2f2
+        }
+
+        th
+        {
+        background-color: #4CAF50;
+        color: white;
+        }
+
+        #wave
+        {
+          color: red;
+        }
+
+    </style>
+
+    </head>
+
+<body>
+
+
+
+    <center><h1> For practicing different coding formats. </h1></center>
+
+    <h2 id="wave"> This is a table </h2>
+    <!-- This is a Table -->
+    <table >
+        <!-- <tr> means table row -->
+        <tr>
+            <th>Row 1</th>
+            <th>Row 2</th>
+            <th>Row 3</th>
+        </tr>
+        <tr>
+            <!-- <td> means table data, a table cell -->
+            <td> 1/1 </td>
+            <td> 1/2 </td>
+            <td> 1/3 </td>
+        </tr>
+        <tr>
+            <td> 2/1 </td>
+            <td> 2/2 </td>
+            <td> 2/3 </td>
+        </tr>
+         <tr>
+            <td> 3/1 </td>
+            <td> 3/2 </td>
+            <td> 3/3 </td>
+        </tr>
+        <tr>
+            <td> 4/1 </td>
+            <td> 4/2</td>
+            <td> 4/3</td>
+        </tr>
+    </table>
+
+    <h2> These are Lists</h2>
+    <!-- Lists -->
+
+    <h3> This is an ordered list, meaning its items are numbered </h3>
+    <!-- <ol> means ordered list, will give you a numbered list -->
+    <p> Don't Kings Playing Chess On Freeways Get Squashed? </p>
+    <ol>
+        <!-- <li> means list item -->
+        <li> Domain </li>
+        <li> Kingdom </li>
+        <li> Phylum </li>
+        <li> Class </li>
+        <li> Order </li>
+        <li> Family </li>
+        <li> Genus </li>
+        <li> Species </li>
+    </ol>
+
+    <h3> This is an unordered list, meaning its items are bulletpointed </h3>
+    <!-- <ul> means unordered list, uses bullet points -->
+    <ul>
+        <li> Red </li>
+        <li> White </li>
+        <li> Blue </li>
+    </ul>
+
+    <h3> Definition List </h3>
+    <!-- <dl> means definition list -->
+    <dl>
+        <!-- <dt> menas definition title, <dd> means defintion desscription -->
+        <dt>Russia</dt>
+            <dd>The largest country in both Europe and Asia</dd>
+        <dt>Canada</dt>
+            <dd>The largest country in North America</dd>
+        <dt>Brazil</dt>
+            <dd>The largest country in South America</dd>
+        <dt>Algeria</dt>
+            <dd>The largest country in Africa</dd>
+        <dt>Australia</dt>
+            <dd>The largest country in Oceania</dd>
+    </dl>
+
+    <h2> Links </h2>
+    <!-- <a> means link, href is placed within the first a's closing bracket and means your link is inside the following quotation marks. What is palced between the a's is the text that is clicked to get to the attatched link. -->
+    <a href="http://www.google.com"> This will take you to google. </a>
+    <br>
+    <br>
+    <!-- add target="_blank" to link to another tab -->
+       <a href="http://www.google.com" target="_blank"> This will take you to google on a seperate tab. </a>
+
+   <center><h2 > Images </h2>
+    <!-- <img> means image and is just an empty bracket with no closing tag -->
+    <!-- <img src="url" alt="Text to be dispalyed if image does not work"> -->
+    <!-- src is the image's source, either a file or a url, alt is what is displayed if the image is broken -->
+    <img src="images/Kelby/KelbyCover.jpg" alt="Wave Photo" style="width600px;height:600px;"></center>
+
+    <h2> Formating </h2>
+
+        <h3> Line Breaks </h3>
+        <!-- <br> means break and does not have to be closed. A single <br> will put you on the next line, two <br>'s will skip a line, three <br>'s will skip two lines and so on. -->
+        <p> Line 1 <br> Line 2 <br> <br> Line 4 <br><br><br> Line 7
+    </p>
+
+    <h3> <b>Bold Text</b> </h3>
+    <!-- <b> means blod text -->
+    <p> <b> This text will be bold! </b> </p>
+
+    <h3> <i> Italics </i></h3>
+    <!-- <i> means italics -->
+    <p> <i> This text will be in italics! </i></p>
+
+    <h3> Centering Text </h3>
+    <!-- <center> will center texts and images -->
+    <p> <center> Look at me I'm centered </center> </p>
+
+    <h3> Block Elements </h3>
+    <p> A block element is a tag that will take a new line. </p>
+    <!-- Examples are <p> <h1...h6> <table> <ol> -->
+
+    <h3> Inline Elements </h3>
+    <p> Inline Elements are tags that will not take a new line.
+    </p>
+    <!-- Examples are <b> <i> <image> <a> -->
+
+    <h3> Fonts </h3>
+    <h4> Size </h4>
+    <p>This <font size="6">text </font>is is a different size
+        <br>
+        <font size="1">Size 1</font>
+        <br>
+        <font size="2">Size 2</font>
+        <br>
+        <font size="3">Size 3</font>
+        <br>
+        <font size="4">Size 4</font>
+        <br>
+        <font size="5">Size 5</font>
+        <br>
+        <font size="6">Size 6</font>
+        <br>
+        <font size="7">Size 7</font>
+        <br>
+    </p>
+
+    <h4> Font Styles </h4>
+    <p> This will be in <font face="Comic Sans MS" > Comic Sans </font></p>
+
+    <h4> Color </h4>
+    <p> This <fonts style="color:green"> Text </fonts> will be green </p>
+    <p style="color:green"> All of this text will be green </p>
+
+
+
+
+
+    </body>
+</html>
