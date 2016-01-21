@@ -61,14 +61,57 @@ This link would take you to Vsauces youtube page. -->
         {
           color: red;
         }
+        
+        
+        #panel,
+    #flip {
+      padding: 5px;
+      text-align: center;
+      background-color: #EEAA33;
+      border: solid 1px #c3c3c3;
+    }
 
+    #panel {
+      padding: 200px;
+      display: none;
+    }
+
+        
+        
+    
     </style>
 
+    
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/jjquery.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("#flip").mouseover(function() {
+        $("#panel").slideDown("slow");
+      });
+      $("#flip").mouseout(function() {
+        $("#panel").slideUp("fast");
+      });
+    });
+  </script>
+
+
+    
+    
+    
     </head>
 
 <body>
 
+ <div id="flip">Roll over to slideDown!</div>
+  <div id="panel">Roll out to slideUp!</div>
 
+   
+
+    
+    
+    
 
     <center><h1> For practicing different coding formats. </h1></center>
 

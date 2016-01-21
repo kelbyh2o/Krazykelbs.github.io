@@ -32,9 +32,11 @@
                 max-width: 100%;
                 height: auto;
                 margin-top: 30px;
-                margin-left: 20px;
-                margin-right: 20px;
+                margin-left: 10px;
+                margin-right: 10px;
                 border-radius: 10px;
+                float: top;
+                
             }
             
             li
@@ -45,7 +47,9 @@
             
             body
             {
-                background-color:  rgba(151, 183, 253, 0.4);
+                background-color: rgb(179, 204, 255);
+                height:auto;
+                margin:0;
             }
             
             div.fluctus1
@@ -53,6 +57,8 @@
                 float: bottom;
                  max-width: 100%;
                 height: 100%;
+            
+                
             } 
             
             }
@@ -72,9 +78,25 @@
             
             div.fluctus2
             {
-              padding-bottom: 350px;  
+              padding-bottom: 400px;  
             }
             
+            div.krazy
+            {
+                max-width: 60%
+                height: auto;   
+            }
+            
+            #face
+            {
+                max-width: 50%;
+                
+            }
+            
+            div.lol
+            {
+                
+            }
             
             div.column
             {
@@ -114,6 +136,137 @@
             float: left;
             padding: 15px;
             }
+            
+         
+            
+            #ocean
+            {
+            position:absolute;
+            min-width: 100%;
+            min-height:100%;
+            background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0, rgb(0,50,150)),
+            color-stop(0.50, rgb(0,150,255))
+            
+            );
+            }
+
+            .wave
+            {
+            background-color: rgb(179, 204, 255);
+            display:inline-block;
+            height:60%;
+            width:10px;
+            position:absolute;
+            -webkit-animation-name:             dostuff; 
+            -webkit-animation-duration:         7s; 
+            -webkit-animation-iteration-count:  infinite;
+            -webkit-transition-timing-function: ease-in-out;
+            }
+            
+           
+
+@-webkit-keyframes dostuff{
+  0%{
+    height:60%;
+  }
+  
+  50%{ 
+    height:40%;
+  }
+  
+  100%{ 
+    height:60%;
+  }
+}
+            
+            #c {
+                float: top;
+                max-width: 100%;
+            left: 0px;
+            right: 0px;
+    
+    position: absolute;
+    z-index: -1;
+                opacity: 1;
+                
+  margin: 0;            
+  padding-bottom: 0;
+  overflow: hidden;
+  background-color: #222;
+}
+            
+            
+            
+            
+            @import url(http://fonts.googleapis.com/css?family=Orbitron);
+body { margin: ; }
+.multi-hover {
+	position: relative;
+	
+	max-width:80%;
+	line-height: 0;
+	overflow: hidden;
+}
+.multi-hover img {
+	max-width: 100%;
+}
+.multi-hover span {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	line-height: 1.5;
+	font-weight: 350;
+	text-align: center;
+	box-sizing: border-box;
+	font-size: 3em;
+	z-index: 2;
+	transition: .3s linear;
+	color: white;
+	padding: 10%;
+	opacity: 0;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+.multi-hover span:hover { opacity: 1; }
+
+.multi-hover span:nth-child(odd):hover { left: 0; z-index: 3; }
+.multi-hover span:nth-child(odd).hover { left: 0; z-index: 1; }
+.multi-hover span:nth-child(even):hover { top: 0; z-index: 3; }
+.multi-hover span:nth-child(even).hover { top: 0; z-index: 1; } 
+
+.multi-hover span:nth-child(1) { /* right panel */
+	top: 0;
+	left: 70%;
+	background: hsla(220, 100%, 85%,0.8);
+    
+	}
+	 
+.multi-hover span:nth-child(2) { /* top panel */ 
+	top: -70%;
+	left: 0;
+	background: hsla(220, 100%, 85%,0.8);
+    
+	}   
+
+.multi-hover span:nth-child(3) { /* left panel */ 
+	top: 0;
+	left: -70%;
+    background: hsla(220, 100%, 85%,0.8);
+    
+	}  
+	
+.multi-hover span:nth-child(4) { /* bottom panel */
+	top: 70%;
+	left: 0;
+	background: hsla(220, 100%, 85%,0.8);
+    } 
+            
+           
             
         </style>
     </head>
@@ -155,17 +308,62 @@
     
       <center> 
           
-   <div class="fluctus" style="width:100%; height:100%;">
+          
+          
+          
+          <div class=multi-hover>  
+<span>I am a Junior at Lick-Wilmerding High School in San Francisco. </span>
+<span>Welcome! This is my website. <br> <img id="face"  src="images/Kelby/Profile.jpg">
+              
+              </span>
+<span> Contact me through the social media links above including facebook, instagram, youtube, and github.</span>
+<span> My passions are in the great outdoors. I enjoy spending my time hiking and surfing. The ocean is where I spends a majority of his time. Scroll down to check out some of my photography.</span>
+
+              <div class="fluctus" style="width:100%; height:100%;">
        <div class="fluctus1">
        <img src="images/Kelby/KelbyCover.jpg">
            </div>
-      <h1> Hello there! My name is Kelby Kramer and I am currently a Junior at Lick-Wilmerding Highschool. </h1>
-      <br>
-      <h2> My passions lie in the great outdoors. </h2>
-    </div>
+        </div>
+          </div>
+   
+    
+       
+       
+       
+       <div class="lol"></div>
+       
+       <canvas id="c" style="margin-top: 30px"></canvas>
+       <br>
+        <br>
+        <br>
+       <br>
+       <br>
+       <br>
+        <br>
+       <br>
+       <br>
+          <br>
+       <br>
+    <br>
+        <div class="krazy">
+        
+            
+            <h1> <font color="white"> The only constant in life is change<br> It is our job to make that change for the better. </h1>
+    
+   
+              </div>
+     <div class="ripple">
+            </div>
+        
     <div  class="fluctus2">
           </div>
       
+            
+        
+
+   
+          
+          
           
   </center>
     <div class="container"> 
@@ -237,10 +435,146 @@
     </div>
 </div> 
      
-     
+     <div id="ocean">
+
+</div>
   
 </body>
 
-  
+    <script>
+    function is_touch_device() {
+  return !!('ontouchstart' in window) 
+      || !!('onmsgesturechange' in window); 
+};
+
+$(document).ready(function() {
+  if (is_touch_device()) {
+    $('span').unbind('mousenter mouseleave touchend touchstart');
+    $('span').bind('touchstart', function() {
+      $('span').removeClass('hover');
+      $(this).addClass('hover');
+    });
+  }
+});
+    
+    </script>
+    
+    
+    <script>
+  // make some waves.
+var ocean = document.getElementById("ocean"),
+    waveWidth = 8,
+    waveCount = Math.floor(window.innerWidth/waveWidth),
+    docFrag = document.createDocumentFragment();
+
+for(var i = 0; i < waveCount; i++){
+  var wave = document.createElement("div");
+  wave.className += " wave";
+  docFrag.appendChild(wave);
+  wave.style.left = i * waveWidth + "px";
+  wave.style.webkitAnimationDelay = (i/100) + "s";
+}
+
+ocean.appendChild(docFrag);
+
+</script>
+    
+    <script>
+        var c = document.getElementById("c");
+var ctx = c.getContext("2d");
+var R = 200,
+  R1 = 150,
+  A = 0,
+  a = 0,
+  phi = 0;
+var cw = c.width = window.innerWidth,
+  cx = cw / 2;
+var ch = c.height = window.innerHeight,
+  cy = ch / 2;
+
+var rad = (Math.PI / 180);
+var stopped = true;
+var frames = 0;
+
+var ellipses = 40;
+var r = 500,
+  r1 = r / 2;
+var frequency = 25,
+  frec;
+var amplitude = 10,
+  ampl;
+var phi;
+
+ctx.lineWidth = 1;
+
+if (typeof ctx.ellipse === 'function') {
+  console.log("It's a function");
+} else {
+  ctx.ellipse = function(X, Y, rX, rY, theta, ap, af) {
+
+    for (var a = ap; a < af; a += .1) {
+      var x = X + rX * Math.cos(a) * Math.cos(theta) - rY * Math.sin(a) * Math.sin(theta);
+      var y = Y + rX * Math.cos(a) * Math.sin(theta) + rY * Math.sin(a) * Math.cos(theta);
+      ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+  }
+}
+
+function newWave(phi, ampl) {
+  R = r, R1 = r1, cy = ch / 2;
+  cx = cw / 2;
+  var x = cx;
+  var y = cy;
+  var l = 20;
+
+  for (var i = ellipses; i > 0; i--) {
+    R -= r / ellipses;
+    R1 -= r1 / ellipses;
+    l += 100 / (ellipses + 20);
+
+    y += ampl * Math.sin((i * frec * rad) + phi);
+
+    ctx.strokeStyle = 'hsl(200,99%,' + l + '%)';
+    ctx.beginPath()
+    ctx.ellipse(x, y, R, R1, a, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.globalCompositeOperation = "difference";
+  }
+}
+
+function Draw() {
+
+  frames++
+  ctx.clearRect(0, 0, cw, ch);
+  phi += .01;
+  ampl = amplitude * Math.sin(.1 * frames * rad);
+  frec = frequency * Math.sin(.1 * frames * rad);
+  ctx.clearRect(0, 0, cw, ch);
+
+  newWave(phi, ampl)
+
+  requestId = window.requestAnimationFrame(Draw);
+}
+Draw();
+
+function start() {
+  requestId = window.requestAnimationFrame(Draw);
+  stopped = false;
+}
+
+function stopAnim() {
+  if (requestId) {
+    window.cancelAnimationFrame(requestId);
+  }
+  stopped = true;
+}
+
+window.addEventListener("load", start(), false);
+c.addEventListener("click", function() {
+  (stopped == true) ? start(): stopAnim();
+}, false);
+    </script>
+
 
 </html>
