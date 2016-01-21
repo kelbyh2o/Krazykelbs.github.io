@@ -266,7 +266,77 @@ body { margin: ; }
 	background: hsla(220, 100%, 85%,0.8);
     } 
             
-           
+            figure {     
+  margin: 0;
+  position: relative;
+  perspective: 1800px;
+  transform-style: preserve-3d;
+  max-width: 1000px; 
+  padding-bottom: 60%; 
+                overflow: hidden;
+                
+}
+figure img { 
+  top: 0;
+  left: 0;
+  position: absolute;
+  transition: 1s;
+  width: 100%;
+  border-radius: 0px;
+}
+figure img.first { transform: rotateY(0deg); }
+figure img.second { transform: rotateY(-180deg) translateZ(0px); }
+figure:hover img.first { transform: rotateY(180deg);  } 
+figure:hover img.second { transform: rotateY(0deg) translateZ(0px);  }
+figure img:nth-child(1), figure img:nth-child(11) { 
+  clip: rect(0px, 100px, 840px, 0px);
+  transform-origin: 50px 0px;
+}
+figure img:nth-child(2), figure img:nth-child(12) {
+  clip: rect(0px, 200px, 840px, 100px);
+  transform-origin: 150px 0px;
+  transition-delay: 100ms;
+}
+figure img:nth-child(3), figure img:nth-child(13) {
+  clip: rect(0px, 300px, 840px, 200px);
+  transform-origin: 250px 0px;
+  transition-delay: 200ms;  
+}
+figure img:nth-child(4), figure img:nth-child(14) {
+  clip: rect(0px, 400px, 840px, 300px);
+  transform-origin: 350px 0px;
+  transition-delay: 300ms; 
+}
+figure img:nth-child(5), figure img:nth-child(15) {
+  clip: rect(0px, 500px, 840px, 400px);
+  transform-origin: 450px 0px;
+  transition-delay: 400ms;
+}
+figure img:nth-child(6), figure img:nth-child(16) {
+  clip: rect(0px, 600px, 840px, 500px);
+  transform-origin: 550px 0px;
+  transition-delay: 500ms; 
+}
+figure img:nth-child(7), figure img:nth-child(17) {
+  clip: rect(0px, 700px, 840px, 600px);
+  transform-origin: 650px 0px;
+  transition-delay: 600ms;
+}
+figure img:nth-child(8), figure img:nth-child(18) {
+  clip: rect(0px, 800px, 840px, 700px);
+  transform-origin: 750px 0px;
+  transition-delay: 700ms;
+}
+figure img:nth-child(9), figure img:nth-child(19) {
+  clip: rect(0px, 900px, 840px, 800px);
+  transform-origin: 850px 0px;
+  transition-delay: 800ms; 
+}
+figure img:nth-child(10), figure img:nth-child(20) {
+  clip: rect(0px, 1000px, 840px, 900px);
+  transform-origin: 950px 0px;
+  transition-delay: 900ms;  
+}
             
         </style>
     </head>
@@ -316,7 +386,7 @@ body { margin: ; }
 <span>Welcome! This is my website. <br> <img id="face"  src="images/Kelby/Profile.jpg">
               
               </span>
-<span> Contact me through the social media links above including facebook, instagram, youtube, and github.</span>
+<span> Conntact me through the social media links above including facebook, instagram, youtube, and github.</span>
 <span> My passions are in the great outdoors. I enjoy spending my time hiking and surfing. The ocean is where I spends a majority of his time. Scroll down to check out some of my photography.</span>
 
               <div class="fluctus" style="width:100%; height:100%;">
@@ -360,7 +430,28 @@ body { margin: ; }
       
             
         
-
+          <figure id=blinds-window>
+  <img src="images/Kelby/Gallery2.jpg" alt class=first>
+  <img src="images/Kelby/Gallery2.jpg" alt class=first>
+  <img src="images/Kelby/Gallery2.jpg" alt class=first>
+  <img src="images/Kelby/Gallery2.jpg" alt class=first>
+  <img src="images/Kelby/Gallery2.jpg" alt class=first>
+  <img src="images/Kelby/Gallery2.jpg" alt class=first>
+  <img src="images/Kelby/Gallery2.jpg" alt class=first>
+  <img src="images/Kelby/Gallery2.jpg" alt class=first>
+  <img src="images/Kelby/Gallery2.jpg" alt class=first>
+  <img src="images/Kelby/Gallery2.jpg" alt class=first>
+  <img src="images/Kelby/Gallery5.jpg" alt class=second>
+  <img src="images/Kelby/Gallery5.jpg" alt class=second>
+  <img src="images/Kelby/Gallery5.jpg" alt class=second>
+  <img src="images/Kelby/Gallery5.jpg" alt class=second>
+  <img src="images/Kelby/Gallery5.jpg" alt class=second>
+  <img src="images/Kelby/Gallery5.jpg" alt class=second>
+  <img src="images/Kelby/Gallery5.jpg" alt class=second>
+  <img src="images/Kelby/Gallery5.jpg" alt class=second>
+  <img src="images/Kelby/Gallery5.jpg" alt class=second>
+  <img src="images/Kelby/Gallery5.jpg" alt class=second>
+</figure>
    
           
           
