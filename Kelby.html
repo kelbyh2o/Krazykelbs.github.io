@@ -167,7 +167,11 @@
             -webkit-transition-timing-function: ease-in-out;
             }
             
-           
+          
+
+
+
+            
 
 @-webkit-keyframes dostuff{
   0%{
@@ -224,7 +228,7 @@ body { margin: ; }
 	box-sizing: border-box;
 	font-size: 3em;
 	z-index: 2;
-	transition: .3s linear;
+	transition: .7s linear;
 	color: white;
 	padding: 10%;
 	opacity: 0;
@@ -265,6 +269,8 @@ body { margin: ; }
 	left: 0;
 	background: hsla(220, 100%, 85%,0.8);
     } 
+            
+            
             
             
         </style>
@@ -357,9 +363,7 @@ body { margin: ; }
     <div  class="fluctus2">
           </div>
       
-         
-          
-          
+
   </center>
     <div class="container"> 
        <div class="row">
@@ -430,29 +434,17 @@ body { margin: ; }
     </div>
 </div> 
      
-     <div id="ocean">
+    <a href="http://mynoise.net/NoiseMachines/oceanNoiseGenerator.php" target="_blank"> <div id="ocean">
 
-</div>
+</div></a>
+    
+   
+    
   
 </body>
-
-    <script>
-    function is_touch_device() {
-  return !!('ontouchstart' in window) 
-      || !!('onmsgesturechange' in window); 
-};
-
-$(document).ready(function() {
-  if (is_touch_device()) {
-    $('span').unbind('mousenter mouseleave touchend touchstart');
-    $('span').bind('touchstart', function() {
-      $('span').removeClass('hover');
-      $(this).addClass('hover');
-    });
-  }
-});
     
-    </script>
+    
+    
     
     
     <script>
@@ -473,6 +465,27 @@ for(var i = 0; i < waveCount; i++){
 ocean.appendChild(docFrag);
 
 </script>
+
+    <script>
+    function is_touch_device() {
+  return !!('ontouchstart' in window) 
+      || !!('onmsgesturechange' in window); 
+};
+
+$(document).ready(function() {
+  if (is_touch_device()) {
+    $('span').unbind('mousenter mouseleave touchend touchstart');
+    $('span').bind('touchstart', function() {
+      $('span').removeClass('hover');
+      $(this).addClass('hover');
+    });
+  }
+});
+    
+    </script>
+    
+    
+    
     
     <script>
         var c = document.getElementById("c");
