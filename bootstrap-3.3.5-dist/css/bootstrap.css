@@ -6283,6 +6283,7 @@ button.close {
 }
 .carousel {
   position: relative;
+padding-top: 5%;
 }
 .carousel-inner {
   position: relative;
@@ -6338,6 +6339,7 @@ button.close {
 }
 .carousel-inner > .active {
   left: 0;
+    
 }
 .carousel-inner > .next,
 .carousel-inner > .prev {
@@ -6381,6 +6383,7 @@ button.close {
   background-image:         linear-gradient(to right, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
   background-repeat: repeat-x;
+    width: 10%;
 }
 .carousel-control.right {
   right: 0;
@@ -6391,6 +6394,7 @@ button.close {
   background-image:         linear-gradient(to right, rgba(0, 0, 0, .0001) 0%, rgba(0, 0, 0, .5) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
   background-repeat: repeat-x;
+    width: 10%;
 }
 .carousel-control:hover,
 .carousel-control:focus {
@@ -6406,7 +6410,7 @@ button.close {
 .carousel-control .glyphicon-chevron-right {
   position: absolute;
   top: 50%;
-  z-index: 5;
+  z-index: 15;
   display: inline-block;
   margin-top: -10px;
 }
@@ -6437,7 +6441,7 @@ button.close {
   position: absolute;
   bottom: 10px;
   left: 50%;
-  z-index: 15;
+  z-index: 1;
   width: 60%;
   padding-left: 0;
   margin-left: -30%;
