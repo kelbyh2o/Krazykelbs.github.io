@@ -23,7 +23,7 @@
     
       body
             {
-                background-color: rgb(179, 204, 255);
+                background-color: rgb(255, 255, 255);
                 height:auto;
                 margin:0;
             }
@@ -95,10 +95,46 @@
     
         div.TopPadding
         {
-            padding-top: 80px;
+            padding-top: 100px;
         }
     
+        div.widget
+        {
+            width: 200%;
+        }
     
+        
+        
+         #ocean
+            {
+            position:absolute;
+            min-width: 100%;
+            min-height:100%;
+            background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0, rgb(0,50,150)),
+            color-stop(0.50, rgb(0,150,255))
+            
+            );
+            }
+
+            .wave
+            {
+            background-color: rgb(179, 204, 255);
+            display:inline-block;
+            height:60%;
+            width:10px;
+            position:absolute;
+            -webkit-animation-name:             dostuff; 
+            -webkit-animation-duration:         7s; 
+            -webkit-animation-iteration-count:  infinite;
+            -webkit-transition-timing-function: ease-in-out;
+            }
+            
+        
+        
     </style>
     
     
@@ -135,90 +171,88 @@
   </div>
 </nav>
     
-    
-        <div class="TopPadding">
-        </div>   
         
-    
-     <div class="container"> 
-       <div class="row">
-        <div class="col-4"> 
-  <a target="_blank" href="images/Kelby/Gallery1.jpg">
-    <img src="images/Kelby/Gallery1.jpg" alt="..." > 
-  </a>
-        </div>
+         <div class="TopPadding">
+        </div> 
 
-        <div class="col-4"> 
-  <a target="_blank" href="images/Kelby/Gallery2.jpg">
-    <img src="images/Kelby/Gallery2.jpg" alt="..." >
-  </a>
-            </div>
-           
-        <div class="col-4"> 
-  <a target="_blank" href="images/Kelby/Gallery3.jpg">
-    <img src="images/Kelby/Gallery3.jpg" alt="..."  >
-  </a>
-            </div>
+        <div class="widget">
+        
+
+        
         </div>
         
-        <div class="row">
-            
-               <div class="col-4"> 
-  <a target="_blank" href="images/Kelby/Gallery4.jpg">
-    <img src="images/Kelby/Gallery4.jpg" alt="..." >
-  </a>
-           </div>
-                
-            <div class="col-4"> 
+    <center> <div style="position: inherit; width: 100%; overflow: hidden; ">  <iframe src="http://widgets-code.websta.me/w/275b95f2a360?ck=MjAxNi0xMC0xOFQwNDoyMDozMy45MzVa" allowtransparency="true" frameborder="0" scrolling="no" style="position: relative; border:none;overflow:auto;height:3175px;width:900px;"></iframe> <!-- WEBSTA WIDGETS - widgets.websta.me -->  </div></center>
+  
+    
+  
+    
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+          <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+          <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+ 
+    
+    
+    
+    
+    
+    <script>
+  // make some waves.
+var ocean = document.getElementById("ocean"),
+    waveWidth = 8,
+    waveCount = Math.floor(window.innerWidth/waveWidth),
+    docFrag = document.createDocumentFragment();
 
-  <a target="_blank" href="images/Kelby/Gallery5.jpg">
-    <img src="images/Kelby/Gallery5.jpg" alt="..." >
-  </a>
-            </div>
-           
-             <div class="col-4"> 
-  <a target="_blank" href="images/Kelby/Gallery6.jpg">
-    <img src="images/Kelby/Gallery6.jpg" alt="..." >
-  </a> 
-                </div>
-             </div>
-     
-                
-           </div> 
+for(var i = 0; i < waveCount; i++){
+  var wave = document.createElement("div");
+  wave.className += " wave";
+  docFrag.appendChild(wave);
+  wave.style.left = i * waveWidth + "px";
+  wave.style.webkitAnimationDelay = (i/100) + "s";
+}
+
+ocean.appendChild(docFrag);
+
+</script>
         
-        <div class="row">
-             <div class="col-4"> 
-  <a target="_blank" href="images/Kelby/Gallery7.jpg">
-    <img src="images/Kelby/Gallery7.jpg" alt="..." >
-  </a>
-            </div>
-                 
-            <div class="col-4"> 
-    <a target="_blank" href="images/Kelby/Gallery8.jpg">
-    <img src="images/Kelby/Gallery8.jpg" alt="..." >
-  </a>
-            </div> 
-            
+        <script>
+    function is_touch_device() {
+  return !!('ontouchstart' in window) 
+      || !!('onmsgesturechange' in window); 
+};
 
-            <div class="col-4"> 
-  <a target="_blank" href="images/Kelby/Gallery9.jpg">
-    <img src="images/Kelby/Gallery9.jpg" alt="..." >
-  </a>
-            </div>
-            </div>     
-    </div>
-</div> 
+$(document).ready(function() {
+  if (is_touch_device()) {
+    $('span').unbind('mousenter mouseleave touchend touchstart');
+    $('span').bind('touchstart', function() {
+      $('span').removeClass('hover');
+      $(this).addClass('hover');
+    });
+  }
+});
     
+    </script>
+
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
+   
     
     
     
